@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Mega Cash Bucks - Loan Portal</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+
+
+<script src="listLoans.js"></script>
+
+<!--Bootstrap Links-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<style>
+
+    .backgroundImage {
+                        background-image: url("images/topbar.png");
+                    }
+
+    .padding {                                             
+
+                margin-left: 10%;
+    }
+
+</style>
+
+</head>
+
+    <body>
+
+          <!--BootStrap Navbar-->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-sm backgroundImage">
+    
+  <a class="navbar-brand backgroundImage" href="#">
+      <img src="images/PaydayLoanLogo.png" alt="">
+    </a>
+  
+  <ul class="navbar-nav" >
+      <li class=nav-item>
+          <a class="nav-link" href="#">WHAT WE OFFER</a>
+      </li>
+      <li class=nav-item>
+          <a class="nav-link" href="#">HOW IT'S DONE</a>
+      </li>
+      <li class=nav-item>
+          <a class="nav-link" href="#">BE INFORMED</a>
+      </li>
+      <li class=nav-item>
+          <a class="nav-link" href="#">FAQ</a>
+      </li>
+      <li class=nav-item>
+          <a class="nav-link" href="#">SIGN IN</a>
+      </li>
+      <li class=nav-item>
+          <a class="nav-link" href="#">APPLY NOW</a>
+      </li>
+
+  </ul>
+
+  </nav>   
+      
+      
+          <div class="Header" class="padding">
+                    <h1>Loan Interaction Page</h1>
+                  </div>
+                
+                  <div class="List Loans"> <!--Lists Loan Information-->
+                    <h4>Create/Delete Database</h4>
+                    Loan Request&nbsp;&nbsp;&nbsp;
+                    <select>
+                            <option value="Loan1">Loan1</option>
+                            <option value="Loan2">Loan2</option>
+                            <option value="Loan3">Loan3</option>
+                            <option value="Loan4">Loan4</option>
+                          </select>
+                    <input type="button" value="Approve Loan" onclick='addDBase()'> 
+                    <input type="button" value="Deny Loan" onclick='dropDBase()'>        
+                    <br>
+                    <!--Show Active Loans Button-->
+                    <input type="button" onclick='showActiveLoans()'  value="Show Active Loans"></div>
+                  
+                  <h1>Active Loans</h1>
+                  <!--Div for displaying Active Loans-->
+                  <div id="LoanList"></div>
+                  
+                  <h1>Requested Loans</h1>
+                  <!--Div for displaying requested loans-->
+                  <div id="RequestedLoans"></div>
+                
+                 <!--storage boxes for page values for dbases-->
+                  <input class="storage" type="text" id="State1">
+                  <input class="storage" type="text" id="State2">
+                  <input class="storage" type="text" id="State3">
+
+
+    </body>
+
+</html>
